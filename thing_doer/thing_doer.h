@@ -3,7 +3,7 @@
 
 #include "i_thing_doer.h"
 
-class ThingDoer : IThingDoer
+class ThingDoer : public IThingDoer
 {
     public:
         ThingDoer();
