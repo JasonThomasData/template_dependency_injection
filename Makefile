@@ -5,13 +5,13 @@ phony: all
 objects: build/base_class.o build/thing_doer.o build/main.o
 
 build/base_class.o: base_class/base_class.cpp
-	gcc -std=c++14 -c base_class/base_class.cpp -o build/base_class.o
+	g++ -std=c++14 -c base_class/base_class.cpp -o build/base_class.o
 
 build/thing_doer.o: thing_doer/thing_doer.cpp
-	gcc -std=c++14 -c thing_doer/thing_doer.cpp -o build/thing_doer.o
+	g++ -std=c++14 -c thing_doer/thing_doer.cpp -o build/thing_doer.o
 
 build/main.o: main.cpp
-	gcc -std=c++14 -c main.cpp -o build/main.o
+	g++ -std=c++14 -c main.cpp -o build/main.o
 
 exe:
-	gcc -std=c++14 build/base_class.o build/thing_doer.o build/main.o -o exe 
+	g++ -std=c++14 build/base_class.o build/thing_doer.o build/main.o -o exe 
