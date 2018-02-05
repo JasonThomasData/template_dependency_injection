@@ -1,12 +1,9 @@
 #include "base_class.h"
 #include "../thing_doer/i_thing_doer.h"
 
-BaseClass::BaseClass(IThingDoer* thing_doer_ptr)
-{
-    thing_doer = thing_doer_ptr;
-}
+BaseClass<T>::BaseClass(){}
 
 void BaseClass::do_the_thing()
 {
-    thing_doer->do_it();
+    thing_doer.do_it();
 }

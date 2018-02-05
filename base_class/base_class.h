@@ -3,12 +3,13 @@
 
 #include "../thing_doer/i_thing_doer.h"
 
+template<class T>
 class BaseClass
 {
     private:
-        IThingDoer* thing_doer;
+        T thing_doer;
     public:
-        BaseClass(IThingDoer* thing_doer);
+        BaseClass<T>();
         void do_the_thing();
 };
 

@@ -3,8 +3,7 @@
 
 int main(int argc, char* argv[])
 {
-    ThingDoer* thing_doer = new ThingDoer();
-    BaseClass base_class(thing_doer);
+    BaseClass<ThingDoer> base_class;
 
     base_class.do_the_thing();
 
